@@ -1,0 +1,1 @@
+echo "# Clone-GuildWars2"

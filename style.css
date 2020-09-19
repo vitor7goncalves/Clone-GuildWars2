@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    /*overflow-x: hidden;*/
+}
+.top-menu{
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #8c8c8c;
+    padding: 2px;
+    align-items: center;
+    z-index: 100;
+}
+.top-menu img{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-right: 10px;
+    height: 25px;
+    width: 75px;
+    cursor: pointer;
+}
+.top-menu .top-list1{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    list-style: none;
+}
+.top-menu .top-list1 li{
+    margin: 0 10px;
+}
+.top-menu .top-list2{
+    display: flex;
+    margin-left: 30rem;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.top-menu .top-list2 li{
+    margin: 0 5px;
+}
+.top-menu li:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+select{
+    background-color: rgba(0, 0, 0);
+    color: #8c8c8c;
+    border: none;
+}
+select:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+/*----------Navbar----------------*/
+.inicio{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    position: relative;
+    background-color: #ffffff;
+}
+.navbar-fundo{
+    position: absolute;
+    top: 0;
+    left: -330px;
+    z-index: 0;
+}
+.navbar .logo{
+    position: absolute;
+    z-index: 1;
+    width: 15rem;
+    left: 6.5rem;
+    top: 1.7rem;
+}
+.navbar .navbar-list{
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    top: 46px;
+    left: 32rem;
+    font-size: 22px;
+    color: #ffffff;
+}
+.navbar li:hover{
+    color: #daa520;
+    cursor: pointer;
+}
+.navbar button{
+    position: absolute;
+    z-index: 100;
+    top: 56px;
+    right: 10rem;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(180deg,#aa1817,#3e1209);
+    padding: 6px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+.navbar button:hover{
+    background: linear-gradient(180deg,#f52b2b,#9c2e18);
+    cursor: pointer;
+}
+.navbar .navbar-list li{
+    list-style: none;
+    margin: 10px;
+}
+/*---------------Showcase--------------------*/
+.showcase{
+    position: absolute;
+    top: 43%;
+    left: 2rem;
+    display: flex;
+    flex-direction: column;
+    background: url(https://guildwars2.staticwars.com/wp-content/themes/guildwars2.com-live/img/featured-ft.c2e7567e.jpg) no-repeat 50% 100%;
+}
+.showcase h2{
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    margin-bottom: 10px;
+    font-size: 55px;
+    line-height: 1.1;
+}
+.showcase p{
+    position: absolute;
+}
+.showcase .p1{
+    top: 210px;
+    left: 150px;
+    margin-bottom: 32px;
+    color: #777;
+    font-size: 20px;
+    line-height: 1.1
+}
+.showcase .p2{
+    top: 280px;
+    left: 150px;
+    font-size: 14px;
+    margin-bottom: 32px;
+    color: #ff0000;
+    line-height: 1.1;
+}
+.showcase .leia-mais .p2 i{
+    margin-left: 5px;
+}
