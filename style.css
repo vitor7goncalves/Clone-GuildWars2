@@ -2,6 +2,14 @@
     margin: 0;
     /*overflow-x: hidden;*/
 }
+
+li{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
 .top-menu{
     position: absolute;
     width: 100%;
@@ -27,7 +35,6 @@
     display: flex;
     justify-content: flex-start;
     font-size: 15px;
-    list-style: none;
 }
 .top-menu .top-list1 li{
     margin: 0 10px;
@@ -35,7 +42,6 @@
 .top-menu .top-list2{
     display: flex;
     margin-left: 30rem;
-    list-style: none;
     justify-content: space-between;
     font-size: 14px;
 }
@@ -110,7 +116,6 @@ select:hover{
     cursor: pointer;
 }
 .navbar .navbar-list li{
-    list-style: none;
     margin: 10px;
 }
 /*---------------Showcase--------------------*/
@@ -168,4 +173,147 @@ select:hover{
    width: 95%;
    position: absolute;
    bottom: -80px;
+}
+
+/*---------News----------*/
+.news{
+    width: 100%;
+    height: 980px;
+}
+.news h3{
+    position: absolute;
+    top: 800px;
+    left: 215px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+.news-list{
+    position: relative;
+    display: flex;
+    top: 170px;
+    margin-left: 170px;
+}
+.news-list .list-items .list-item{
+    height: 120px;
+}
+.news-list .list-items .item, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+    position: absolute;
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.news-list .list-items .item{
+    top: 5px;
+}
+.news-list .list-items .item2{
+    top: 125px;
+}
+.news-list .list-items .item3{
+    top: 250px;
+}
+.news-list .list-items .item4{
+    top: 370px;
+}
+.news-list .list-items .item5{
+    top: 490px;
+}
+.news-list .list-items .item6{
+    top: 610px;
+}
+.news-list .list-items .item7{
+    top: 730px;
+}
+.news-list .list-items .item8{
+    top: 850px;
+}
+.data{
+    margin-right: 30px;
+    align-content: center;
+}
+.dia{
+    font-size: 26px;
+}
+.mes{
+    font-size: 15px;
+    color: #514e4c;
+}
+.palavra{
+    margin-right: 250px;
+}
+.palavra h4{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #1c1c1c;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.palavra li{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-style: bold;
+    color: #878787;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.palavra a{
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-style: bold;
+    color: #ff0000;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.news-list .list-items .item img, .item2 img, .item3 img, .item4 img, .item5 img, .item6 img, .item7 img, .item8 img{
+    margin-top: 10px;
+    width: 10px;
+    height: 15px;
+}
+.all-news a{
+    color: #ff0000;
+}
+.card-list{
+    position: relative;
+}
+.card{
+   margin-bottom: 50px;
+   margin-left: 40px;
+}
+.card-border1, .card-border2{
+   width: 276px;
+   height: 201px;
+   box-shadow: .5px 3px 8px rgba(0, 0, 0, .5);
+   padding: 0;
+   cursor: pointer;
+}
+.card-border2{
+    height: 235px; 
+ }
+
+.line-top{
+    position: absolute;
+    width: 276px;
+    height: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow{
+    position: absolute;
+    left: 610px;
+    cursor: pointer;
+}
+.p-card-1{
+    margin-top: 15px;
+}
+.card p{
+    font-size: 14px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.card .p-card-2{
+    margin-bottom: 10px;
+}
+.card p{
+    margin-left: 10px;
+}
+.card a{
+    margin-left: 10px;
+    color: #ff0000;
 }
