@@ -9,6 +9,10 @@ li{
 a{
     text-decoration: none;
 }
+@font-face {
+    font-family: Cronos;
+    src:  local(Cronos), url(assets/fonts/cronos-pro-1.otf);
+}
 
 .top-menu{
     position: absolute;
@@ -93,22 +97,29 @@ select:hover{
     font-size: 22px;
     color: #ffffff;
 }
+.navbar li{
+    font-family: Cronos;
+}
 .navbar li:hover{
     color: #daa520;
     cursor: pointer;
+    
 }
+
+
 .navbar button{
     position: absolute;
     z-index: 100;
     top: 56px;
     right: 10rem;
+    font-family: Cronos;
     font-size: 12px;
     font-weight: 700;
+    text-transform: uppercase;
     color: #ffffff;
     background: linear-gradient(180deg,#aa1817,#3e1209);
     padding: 6px 16px;
     cursor: pointer;
-    text-transform: uppercase;
     border: none;
 }
 .navbar button:hover{
@@ -133,7 +144,8 @@ select:hover{
     margin-bottom: 10px;
     font-size: 50px;
     line-height: 1.1;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
 }
 .showcase p{
     position: absolute;
@@ -143,21 +155,22 @@ select:hover{
     left: 150px;
     margin-bottom: 32px;
     color: #777;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 1.1;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: Cronos;
+    font-weight: normal;
 }
 .showcase .p2{
     position: absolute;
     top: 280px;
     left: 160px;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 32px;
     color: #ff0000;
     line-height: 1.1;
     z-index: 50;
     text-transform: uppercase;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: Cronos;
 }
 .showcase .leia-mais .p2 i{
     margin-left: 5px;
@@ -187,6 +200,7 @@ select:hover{
     z-index: 50;
     text-transform: uppercase;
 }
+
 .news-list{
     position: relative;
     display: flex;
@@ -243,9 +257,10 @@ select:hover{
 .palavra h4{
     margin-top: 10px;
     margin-bottom: 15px;
-    font-size: 16px;
+    font-size: 18px;
     color: #1c1c1c;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
 }
 .palavra li{
     margin-bottom: 5px;
@@ -259,7 +274,7 @@ select:hover{
     font-size: 14px;
     font-style: bold;
     color: #ff0000;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: Cronos;
 }
 .news-list .list-items .item img, .item2 img, .item3 img, .item4 img, .item5 img, .item6 img, .item7 img, .item8 img{
     margin-top: 10px;
@@ -304,8 +319,8 @@ select:hover{
     margin-top: 15px;
 }
 .card p{
-    font-size: 14px;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .card .p-card-2{
     margin-bottom: 10px;
@@ -316,4 +331,7 @@ select:hover{
 .card a{
     margin-left: 10px;
     color: #ff0000;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 12px;
 }
