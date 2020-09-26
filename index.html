@@ -9,6 +9,7 @@
     <title>GuildWars2.com</title>
 </head>
 <body>
+  <div id="app">
     <header class="top">
            <div class="top-menu" >
                <a href="index.html">
@@ -16,28 +17,33 @@
                </a>
                <ul>
                    <div class="top-list1">
-                   <li>about us</li>
-                   <li>our games</li>
-                   <li>carrers</li>
-                   <li>merchandise</li>
+                   <li id="li-link">about us</li>
+                   <li id="li-link">our games</li>
+                   <li id="li-link">carrers</li>
+                   <li id="li-link">merchandise</li>
                 </div>
                </ul>
                <ul>
                    <div class="top-list2">
-                   <li>forums</li>
-                   <li>|</li>
-                   <li>wiki</li>
-                   <li>|</li>
-                   <li>support</li>
-                   <li>|</li>
-                   <li>log in</li>
-                   <li>|</li>
-                   <select>
-                       <option value="">EN</option>
-                       <option value="">DEN</option>
-                       <option value="">ES</option>
-                       <option value="">FR</option>
-                   </select>
+                   <li id="li-link">forums</li>
+                   <li class="space">|</li>
+                   <li id="li-link">wiki</li>
+                   <li class="space">|</li>
+                   <li id="li-link">support</li>
+                   <li class="space">|</li>
+                   <li id="li-link">log in</li>
+                   <li class="space">|</li>
+                   <button class="lang-button">
+                    <li class="lang-select" id="li-link">{{en}}</li><div class="seta-baixo"></div>
+                    <div class="lang-list">
+                      <ul class="language">
+                        <li id="li-link" @click="langDE()">DE</li>
+                        <li id="li-link" @click="langES()">ES</li>
+                        <li id="li-link" @click="langFR()">FR</li>
+                        <li id="li-link" @click="langENGB()">EN-GB</li>
+                      </ul>
+                    </div>
+                  </button>
                 </div>
                </ul>
            </div>
@@ -72,7 +78,7 @@
            <div class="leia-mais">
                <a href="index.html">
                     <p class="p2">
-                        Learn more  <i class="fas fa-play"></i>
+                        Learn more <div class="seta-direita"></div>
                     </p>
                     <img src="assets/img/fundo-learn.jpg" alt="">
                 </a>
@@ -84,6 +90,30 @@
                <div class="img-showcase-rodape">
                        <img src="assets/img/featured-ft.c2e7567e.jpg" alt="">
                </div>
+           </div>
+           <div class="button-show">
+            <button class="button-1" >
+              <p>1</p>
+              <img class="off" src="assets/img/closeButton.png"></img>
+              <img class="on" src="assets/img/openButton.png"></img>
+            </button>
+            <button class="button-2" >
+              <p>2</p>
+              <img class="off" src="assets/img/closeButton.png"></img>
+              <img class="on" src="assets/img/openButton.png"></img>
+            </button>
+            <button class="button-3" >
+              <p>3</p>
+              <img class="off" src="assets/img/closeButton.png"></img>
+              <img class="on" src="assets/img/openButton.png"></img>
+            </button>
+            <button class="button-4" >
+              <p>4</p>
+              <img class="off" src="assets/img/closeButton.png"></img>
+              <img class="on" src="assets/img/openButton.png"></img>
+            </button>
+            
+            
            </div>
         </header>
     </div>
@@ -242,7 +272,7 @@
                                <img src="assets/img/34d71190830-GW2-HOT-POF-Sidebar.jpg" alt="">
                                <p class="p-card-1">Get Heart of Thorns FREE When</p>
                                <p class="p-card-2">You Purchase Path of Fire</p>
-                               <a href="">Buy now <i class="fas fa-play"></i></a>
+                               <a href="">Buy now <div class="seta2-direita"></div></a>
                             </div>
                       </div>
                       <div class="card">
@@ -250,7 +280,7 @@
                                <img class="line-top" src="assets/img/line-top.4bf69877.jpg" alt="">
                                <img src="assets/img/e021bFFBF_mask_GuildWars-Website_TOP.jpg" alt="">
                                <p class="p-card-2">Get Your GW2 Merch</p>
-                               <a href="">Learn more <i class="fas fa-play"></i></a>
+                               <a href="">Learn more <div class="seta3-direita"></div></i></a>
                             </div>
                       </div>
                   </div>
@@ -258,9 +288,14 @@
                 </div>
             </div>
         </section>
-
-
+      </div>
         <!--Link para as icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
+
+    <script src="https://unpkg.com/vue"></script >
+      <script src="script.js"></script>
+
+      
 </body>
 </html>
