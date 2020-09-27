@@ -90,7 +90,7 @@
       </header>
       <div class="sub-menu">
         <div v-show="gameVisi">
-             <ul class="sub-lists1" @mouseleave="gameOcult()">
+             <ul class="sub-lists1">
                <img class="img-1" src="assets/img/nav-sub-aba.png" alt="">
                <li class="sub-list1">The Races of Tyria</li><img class="seta-sub1" src="assets/img/menu-arrow.png" alt=""><button @mouseover="racesVisible()" class="button-sub1"></button>
                <li class="sub-list-line1">_____________________________________</li>
@@ -211,7 +211,7 @@
              </ul>
             </div>
       </div>
-
+      <div class="end-action" @mouseover="endAction()"></div>
        <header class="showcase">
            <h2>Sunqua Peak</h2>
            <p class="p1">An all-new fractal and challenge mode</p>

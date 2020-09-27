@@ -91,6 +91,7 @@ var app = new Vue({
             this.communityVisi = false
             this.servicesVisi = false
             this.shopVisi = false
+            this.raceActive = false
         },
         releasesOcult(){
             this.releasesVisi = false
@@ -102,6 +103,7 @@ var app = new Vue({
             this.communityVisi = false
             this.servicesVisi = false
             this.shopVisi = false
+            this.raceActive = false
         },
         mediaOcult(){
             this.mediaVisi = false
@@ -113,6 +115,7 @@ var app = new Vue({
             this.communityVisi = true
             this.servicesVisi = false
             this.shopVisi = false
+            this.raceActive = false
         },
         communityOcult(){
             this.communityVisi = false
@@ -124,6 +127,7 @@ var app = new Vue({
             this.communityVisi = false
             this.servicesVisi = true
             this.shopVisi = false
+            this.raceActive = false
         },
         servicesOcult(){
             this.servicesVisi = false
@@ -135,6 +139,7 @@ var app = new Vue({
             this.communityVisi = false
             this.servicesVisi = false
             this.shopVisi = true
+            this.raceActive = false
         },
         shopOcult(){
             this.shopVisi = false
@@ -151,6 +156,11 @@ var app = new Vue({
             this.professionsActive = true
         },
         professionOcult(){
+            this.professionsActive = false
+        },
+        endAction(){
+            this.gameVisi = false
+            this.raceActive = false
             this.professionsActive = false
         },
     },

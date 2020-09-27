@@ -151,7 +151,7 @@ a{
 }
 .navbar .logo{
     position: absolute;
-    z-index: 1;
+    z-index: 100;
     width: 15rem;
     left: 6.5rem;
     top: 1.7rem;
@@ -180,7 +180,7 @@ a{
 
 .navbar button{
     position: absolute;
-    z-index: 90;
+    z-index: 99;
     top: 56px;
     right: 10rem;
     font-family: Cronos;
@@ -1229,6 +1229,13 @@ a{
    width: 95%;
    position: absolute;
    bottom: -80px;
+}
+/*---------------------------endAction-------------------------*/
+.end-action{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    z-index: 98;
 }
 /*-------------------showcase buttons-------------------------*/
 .button-show{
