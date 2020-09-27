@@ -38,9 +38,10 @@
                    <li id="li-link">log in</li>
                    <li class="space">|</li>
                    <button class="lang-button">
-                    <li class="lang-select" id="li-link">{{en}}</li><div class="seta-baixo"></div>
+                    <li class="lang-select" id="li-link">{{lan}}</li><div class="seta-baixo"></div>
                     <div class="lang-list">
                       <ul class="language">
+                        <li id="li-link" @click="langEN()">EN</li>
                         <li id="li-link" @click="langDE()">DE</li>
                         <li id="li-link" @click="langES()">ES</li>
                         <li id="li-link" @click="langFR()">FR</li>
@@ -61,12 +62,24 @@
                 </a>
                   <ul>
                     <div class="navbar-list">
-                      <li class="game">Game</li>
-                      <li class="releases">Releases</li>
-                      <li class="media">Media</li>
-                      <li class="community">Community</li>
-                      <li class="services">Services</li>
-                      <li class="shop">Shop</li>
+                      <a href="index.html" >
+                        <li class="game"  @mouseover="gameVisible()">Game</li>
+                      </a>
+                      <a href="index.html" >
+                      <li class="releases" @mouseover="releasesVisible()">Releases</li>
+                    </a>
+                      <a href="index.html" >
+                      <li class="media" @mouseover="mediaVisible()">Media</li>
+                    </a>
+                      <a href="index.html" >
+                      <li class="community"  @mouseover="communityVisible()">Community</li>
+                    </a>
+                      <a href="index.html" >
+                      <li class="services"  @mouseover="servicesVisible()">Services</li>
+                    </a>
+                      <a href="index.html" >
+                      <li class="shop"  @mouseover="shopVisible()">Shop</li>
+                    </a>
                     </div>
                   </ul>
                 <button class="bnt-donwload">Download now</button>
@@ -76,7 +89,8 @@
         </div>
       </header>
       <div class="sub-menu">
-             <ul class="sub-lists1">
+        <div v-show="gameVisi">
+             <ul class="sub-lists1" @mouseleave="gameOcult()">
                <img class="img-1" src="assets/img/nav-sub-aba.png" alt="">
                <li class="sub-list1">The Races of Tyria</li><img class="seta-sub1" src="assets/img/menu-arrow.png" alt="">
                <li class="sub-list-line1">_____________________________________</li>
@@ -92,7 +106,9 @@
                <li class="sub-list-line1">_____________________________________</li>
                <li class="sub-list1">Competitive Play</li>
              </ul>
-             <ul class="sub-lists2">
+            </div>
+            <div v-show="releasesVisi">
+             <ul class="sub-lists2" @mouseleave="releasesOcult()">
               <img class="img-2" src="assets/img/nav-sub-aba.png" alt="">
                <li class="sub-list2" id="l2-1">Living World</li>
                <br><br>
@@ -103,7 +119,9 @@
                <li class="sub-list-line2">_____________________________________</li>
                <a href="" class="a-3">Path of Fire</a><li class="sub-list-back2">Expansion</li>
              </ul>
-             <ul class="sub-lists3">
+            </div>
+            <div v-show="mediaVisi">
+             <ul class="sub-lists3" @mouseleave="mediaOcult()">
               <img class="img-3" src="assets/img/nav-sub-aba.png" alt="">             
                <li class="sub-list3">Concept Art</li>
                <li class="sub-list-line3">_____________________________________</li>
@@ -117,7 +135,9 @@
                <li class="sub-list-line3">_____________________________________</li>
                <a href="" class="a-4">Guild Wars 2</a><li class="sub-list-back3" id="l3-6">Asset Kit</li>
              </ul>
-             <ul class="sub-lists4">
+            </div>
+             <div v-show="communityVisi">
+             <ul class="sub-lists4" @mouseleave="communityOcult()">
               <img class="img-4" src="assets/img/nav-sub-aba.png" alt="">              
                <li class="sub-list4">News</li>
                <li class="sub-list-line4">_____________________________________</li>
@@ -127,7 +147,9 @@
                <li class="sub-list-line4">_____________________________________</li>
                <li class="sub-list4">Affiliate Program</li>
              </ul>
-             <ul class="sub-lists5">
+            </div>
+             <div v-show="servicesVisi">
+             <ul class="sub-lists5" @mouseleave="servicesOcult()">
               <img class="img-5" src="assets/img/nav-sub-aba.png" alt="">           
                <li class="sub-list5">Download Game</li>
                <li class="sub-list-line5">_____________________________________</li>
@@ -139,7 +161,9 @@
                <li class="sub-list-line5">_____________________________________</li>
                <li class="sub-list5">Support</li>
              </ul>
-             <ul class="sub-lists6">
+            </div>
+             <div v-show="shopVisi">
+             <ul class="sub-lists6" @mouseleave="shopOcult()">
               <img class="img-6" src="assets/img/nav-sub-aba.png" alt="">          
                <li class="sub-list6">Buy</li><a class="a-5" href="">Guild Wars 2</a>
                <li class="sub-list-line6">_____________________________________</li>
@@ -149,6 +173,7 @@
                <li class="sub-list-line6">_____________________________________</li>
                <li class="sub-list6">Partners and Sponsors</li>
              </ul>
+            </div>
       </div>
 
        <header class="showcase">
@@ -188,6 +213,11 @@
             </button>
             <button class="button-4" >
               <p>4</p>
+              <img class="off" src="assets/img/closeButton.png"></img>
+              <img class="on" src="assets/img/openButton.png"></img>
+            </button>
+            <button class="button-5" >
+              <p>5</p>
               <img class="off" src="assets/img/closeButton.png"></img>
               <img class="on" src="assets/img/openButton.png"></img>
             </button>
