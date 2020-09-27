@@ -180,7 +180,7 @@ a{
 
 .navbar button{
     position: absolute;
-    z-index: 100;
+    z-index: 90;
     top: 56px;
     right: 10rem;
     font-family: Cronos;
@@ -841,6 +841,320 @@ a{
     font-style: italic;
     font-size: 17px;  
     font-family: Cronos;
+}
+/*---------------MiniSubMenu-------------------------*/
+.mini-sub-menu{
+    position: absolute;
+    width: 100rem;
+    height: 200px;
+    right: 0;
+}
+.mini-menu{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    top: 90px;
+    right: 390px;
+    z-index: 500;
+}
+.mini-sub-menu img{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    right: 0;
+    z-index: 100;
+}
+.mini-sub-menu ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: 101;
+}
+.mini-sub-menu ul li{
+    color: #555;
+    font-size: 17px;
+    margin: 0px 0px 10px 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.mini-sub-menu ul .mini1-line{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 15px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-sub-menu ul .mini2-line{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 45px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-sub-menu ul .mini3-line{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 75px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-sub-menu ul .mini4-line{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 105px;
+    font-size: 10px;
+    cursor: default;
+}
+.as:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.as{
+    position: absolute;
+    top: -5px;
+    left: -10.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.sy:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.sy{
+    position: absolute;
+    top: 26px;
+    left: -10.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.hu:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.hu{
+    position: absolute;
+    top: 54px;
+    left: -10.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.no:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.no{
+    position: absolute;
+    top: 84px;
+    left: -10.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.ch:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.ch{
+    position: absolute;
+    top: 115px;
+    left: -10.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.mini-menu2 img{
+    position: absolute;
+    width: 230px;
+    height: 300px;
+    right: 390px;
+    top: 110px;
+    z-index: 100;
+}
+.mini-menu2 ul{
+    position: absolute;
+    left: 70px;
+    top: 135px;
+    z-index: 101;
+}
+.mini-menu2 ul li{
+    color: #555;
+    font-size: 17px;
+    margin: 0px 0px 10px 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.mini-menu2 ul .mini1-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 15px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini2-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 45px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini3-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 75px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini4-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 108px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini5-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 138px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini6-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 170px;
+    font-size: 10px;
+    cursor: default;
+}
+.mini-menu2 ul .mini7-line2{
+    position: absolute;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    top: 200px;
+    font-size: 10px;
+    cursor: default;
+}
+.eng:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.eng{
+    position: absolute;
+    top: -5px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.nec:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.nec{
+    position: absolute;
+    top: 26px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.thi:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.thi{
+    position: absolute;
+    top: 54px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.ele:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.ele{
+    position: absolute;
+    top: 86px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.war:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.war{
+    position: absolute;
+    top: 117px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.ran:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.ran{
+    position: absolute;
+    top: 148px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.mesm:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.mesm{
+    position: absolute;
+    top: 178px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+.gua:hover{
+    background-color: rgba(150, 150, 150, .1);
+}
+.gua{
+    position: absolute;
+    top: 211px;
+    left: -15.5px;
+    width: 85%;
+    height: 31px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
 }
 /*---------------Showcase--------------------*/
 .showcase{

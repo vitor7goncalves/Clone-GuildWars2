@@ -92,20 +92,56 @@
         <div v-show="gameVisi">
              <ul class="sub-lists1" @mouseleave="gameOcult()">
                <img class="img-1" src="assets/img/nav-sub-aba.png" alt="">
-               <li class="sub-list1">The Races of Tyria</li><img class="seta-sub1" src="assets/img/menu-arrow.png" alt=""><button class="button-sub1"></button>
+               <li class="sub-list1">The Races of Tyria</li><img class="seta-sub1" src="assets/img/menu-arrow.png" alt=""><button @mouseover="racesVisible()" class="button-sub1"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Profession</li><img class="seta-sub2" src="assets/img/menu-arrow.png" alt=""><button class="button-sub2"></button>
+               <li class="sub-list1">Profession</li><img class="seta-sub2" src="assets/img/menu-arrow.png" alt=""><button  @mouseover="professionVisible()" class="button-sub2"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Combat</li><button class="button-sub3"></button>
+               <li class="sub-list1">Combat</li><button class="button-sub3" @mouseover="professionOcult()" @mouseleave="racesOcult()"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Instanced Combat</li><button class="button-sub4"></button>
+               <li class="sub-list1">Instanced Combat</li><button class="button-sub4" @mouseover="professionOcult()" @mouseleave="racesOcult()"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Dynamic Events</li><button class="button-sub5"></button>
+               <li class="sub-list1">Dynamic Events</li><button class="button-sub5" @mouseover="professionOcult()" @mouseleave="racesOcult()"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Personal Story</li><button class="button-sub6"></button>
+               <li class="sub-list1">Personal Story</li><button class="button-sub6" @mouseover="professionOcult()" @mouseleave="racesOcult()"></button>
                <li class="sub-list-line1">_____________________________________</li>
-               <li class="sub-list1">Competitive Play</li><button class="button-sub7"></button>
+               <li class="sub-list1">Competitive Play</li><button class="button-sub7" @mouseover="professionOcult()" @mouseleave="racesOcult()"></button>
              </ul>
+            </div>
+            <div class="mini-sub-menu">
+              <div v-show="raceActive" class="mini-menu" @mouseleave="racesOcult()">
+              <img class="background-races" src="assets/img/nav-subSubNav.ac62b1e.png" alt="">
+                  <ul class="races">
+                    <li class="asura">Asura</li><button class="as"></button>
+                    <li class="mini1-line">________________________________________</li>
+                    <li class="sylvari">Sylvari</li><button class="sy"></button>
+                    <li class="mini2-line">________________________________________</li>
+                    <li class="human">Human</li><button class="hu"></button>
+                    <li class="mini3-line">________________________________________</li>
+                    <li class="norn">Norn</li><button class="no"></button>
+                    <li class="mini4-line">________________________________________</li>
+                    <li class="charr">Charr</li><button class="ch"></button>
+                  </ul>
+                </div>
+            </div>
+            <div v-show="professionsActive" class="mini-menu2" @mouseleave="professionOcult()">
+              <img class="background-professions" src="assets/img/nav-subSubNav.ac62b1e.png" alt="">
+                  <ul class="professions">
+                    <li class="engineer">Engineer</li><button class="eng"></button>
+                    <li class="mini1-line2">_______________________________________</li>
+                    <li class="necromancer">Necromancer</li><button class="nec"></button>
+                    <li class="mini2-line2">_______________________________________</li>
+                    <li class="thief">Thief</li><button class="thi"></button>
+                    <li class="mini3-line2">_______________________________________</li>
+                    <li class="elementalist">Elementalist</li><button class="ele"></button>
+                    <li class="mini4-line2">_______________________________________</li>
+                    <li class="warrior">Warrior</li><button class="war"></button>
+                    <li class="mini5-line2">_______________________________________</li>
+                    <li class="ranger">Ranger</li><button class="ran"></button>
+                    <li class="mini6-line2">_______________________________________</li>
+                    <li class="mesmer">Mesmer</li><button class="mesm"></button>
+                    <li class="mini7-line2">_______________________________________</li>
+                    <li class="guardian">Guardian</li><button class="gua"></button>
+                  </ul>
             </div>
             <div v-show="releasesVisi">
              <ul class="sub-lists2" @mouseleave="releasesOcult()">

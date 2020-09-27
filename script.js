@@ -18,6 +18,8 @@ var app = new Vue({
        communityVisi: false, 
        servicesVisi: false,
        shopVisi: false,
+       raceActive: false,
+       professionsActive: false,
     },
     methods: {
         langEN(){
@@ -136,6 +138,20 @@ var app = new Vue({
         },
         shopOcult(){
             this.shopVisi = false
+        },
+        racesVisible(){
+            this.raceActive = true
+            this.professionsActive = false
+        },
+        racesOcult(){
+            this.raceActive = false
+        },
+        professionVisible(){
+            this.raceActive = false
+            this.professionsActive = true
+        },
+        professionOcult(){
+            this.professionsActive = false
         },
     },
    
