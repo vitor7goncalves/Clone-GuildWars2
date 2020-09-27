@@ -80,7 +80,6 @@ a{
 .lang-button:hover .lang-list{
     opacity: 1;
     visibility: visible; 
-    animation: actionMove 10s; 
     top: 20px;
 }
 .lang-button:hover .seta-baixo:before{
@@ -166,16 +165,15 @@ a{
     left: 32rem;
     font-size: 22px;
     color: #ffffff;
+    margin:0 0 160px 15px;
 }
 .navbar li{
     font-family: Cronos;
 }
 .navbar li:hover{
     color: #daa520;
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
-
 
 .navbar button{
     position: absolute;
@@ -198,6 +196,302 @@ a{
 }
 .navbar .navbar-list li{
     margin: 10px;
+}
+/*------------------Submenu--------------------------*/
+.sub-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    display: flex;
+}
+.sub-menu ul{
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    padding: 0;
+    width: 269px;
+    height: 370px;
+}
+
+.sub-lists1{
+    right: 600px;
+    visibility: hidden;
+    opacity: 0;
+}
+.game:hover .sub-lists1{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists2{
+    right: 507px;
+    visibility: hidden;
+    opacity: 0;
+}
+.releases:hover .sub-lists2{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists3{
+    right: 423px;
+    visibility: hidden;
+    opacity: 0;
+}
+.media:hover .sub-lists3{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists4{
+    right: 345px;
+    visibility: hidden;
+    opacity: 0;
+}
+.community:hover .sub-lists4{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists5{
+    right: 221px;
+    visibility: hidden;
+    opacity: 0;
+}
+.services:hover .sub-lists5{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists6{
+    right: 137px;
+    visibility: hidden;
+    opacity: 0; 
+}
+.shop:hover .sub-lists6{
+    opacity: 1;
+    visibility: visible; 
+}
+.sub-lists1 .img-1{
+    width: 269px;
+    height: 370px;
+}
+.sub-lists2 .img-2{
+    width: 269px;
+    height: 280px;
+}
+.sub-lists3 .img-3{
+    width: 269px;
+    height: 335px;
+}
+.sub-lists4 .img-4{
+    width: 269px;
+    height: 270px;
+}
+.sub-lists5 .img-5{
+    width: 269px;
+    height: 297px;  
+}
+.sub-lists6 .img-6{
+    width: 269px;
+    height: 273px;
+}
+
+.sub-lists1 .sub-list1{
+    position: relative;
+    top: -270px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists2 .sub-list2{
+    position: relative;
+    top: -180px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists3 .sub-list3{
+    position: relative;
+    top: -230px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists4 .sub-list4{
+    position: relative;
+    top: -170px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists5 .sub-list5{
+    position: relative;
+    top: -198px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists6 .sub-list6{
+    position: relative;
+    top: -173px;
+    left: 40px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists2 .sub-list-back1{
+    position: relative;
+    top: -180px;
+    left: 150px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;  
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists2 .sub-list-back2{
+    position: relative;
+    top: -180.5px;
+    left: 120px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;  
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists3 .sub-list-back3{
+    position: relative;
+    top: -235px;
+    left: 130px;
+    color: #555;
+    font-size: 17px;
+    margin: 0;  
+    font-family: Cronos;
+    cursor: pointer;
+}
+.sub-lists1 .sub-list-line1{
+    position: relative;
+    top: -275px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists2 .sub-list-line2{
+    position: relative;
+    top: -185px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists3 .sub-list-line3{
+    position: relative;
+    top: -237.5px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists4 .sub-list-line4{
+    position: relative;
+    top: -177px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists5 .sub-list-line5{
+    position: relative;
+    top: -205px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists6 .sub-list-line6{
+    position: relative;
+    top: -179px;
+    left: 40px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-size: 10px;
+    cursor: default;
+}
+.sub-lists1 .seta-sub1, .sub-lists1 .seta-sub2{
+    position: absolute;
+    right: 35px;
+}
+.sub-lists1 .seta-sub1{
+    top: 109px;
+}
+.sub-lists1 .seta-sub2{
+    top: 138px;
+}
+
+.sub-menu .sub-lists2 .a-1{
+    position: absolute;
+    top: 120px;
+    left: 40px; 
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 13px;  
+    font-family: Cronos;
+}
+.sub-menu .sub-lists2 .a-2{
+    position: absolute;
+    top: 168px;
+    left: 40px; 
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 17px;  
+    font-family: Cronos;
+}
+.sub-menu .sub-lists2 .a-3{
+    position: absolute;
+    top: 200px;
+    left: 40px; 
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 17px;  
+    font-family: Cronos;
+}
+.sub-menu .sub-lists3 .a-4{
+    position: absolute;
+    top: 260px;
+    left: 40px; 
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 17px;  
+    font-family: Cronos;
+}
+.sub-menu .sub-lists6 .a-5{
+    position: absolute;
+    top: 101px;
+    left: 70px; 
+    margin-top: 4px;
+    font-style: italic;
+    font-size: 17px;  
+    font-family: Cronos;
 }
 /*---------------Showcase--------------------*/
 .showcase{
