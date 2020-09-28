@@ -12,14 +12,14 @@ var app = new Vue({
        selecSE: false,
        selecFR: false,
        selecENGB: false,
-       gameVisi: false,
-       releasesVisi: false,   
-       mediaVisi: false,
-       communityVisi: false, 
-       servicesVisi: false,
-       shopVisi: false,
-       raceActive: false,
-       professionsActive: false,
+       gameVisi: "invisible",
+       releasesVisi: "invisible",   
+       mediaVisi: "invisible",
+       communityVisi: "invisible", 
+       servicesVisi: "invisible",
+       shopVisi: "invisible",
+       raceActive: "invisible",
+       professionsActive: "invisible",
     },
     methods: {
         langEN(){
@@ -74,94 +74,94 @@ var app = new Vue({
         },
         
         gameVisible(){
-            this.gameVisi = true
-            this.releasesVisi = false
-            this.mediaVisi = false
-            this.communityVisi = false
-            this.servicesVisi = false
-            this.shopVisi = false
+            this.gameVisi = "visible"
+            this.releasesVisi = "invisible"
+            this.mediaVisi = "invisible"
+            this.communityVisi = "invisible"
+            this.servicesVisi = "invisible"
+            this.shopVisi = "invisible"
         },
         gameOcult(){
-            this.gameVisi = false
+            this.gameVisi = "invisible"
         },
         releasesVisible(){
-            this.gameVisi = false
-            this.releasesVisi = true
-            this.mediaVisi = false
-            this.communityVisi = false
-            this.servicesVisi = false
-            this.shopVisi = false
-            this.raceActive = false
+            this.gameVisi = "invisible"
+            this.releasesVisi = "visible"
+            this.mediaVisi = "invisible"
+            this.communityVisi = "invisible"
+            this.servicesVisi = "invisible"
+            this.shopVisi = "invisible"
+            this.raceActive = "invisible2"
         },
         releasesOcult(){
-            this.releasesVisi = false
+            this.releasesVisi = "invisible"
         },
         mediaVisible(){
-            this.gameVisi = false
-            this.releasesVisi = false
-            this.mediaVisi = true
-            this.communityVisi = false
-            this.servicesVisi = false
-            this.shopVisi = false
-            this.raceActive = false
+            this.gameVisi = "invisible"
+            this.releasesVisi = "invisible"
+            this.mediaVisi = "visible"
+            this.communityVisi = "invisible"
+            this.servicesVisi = "invisible"
+            this.shopVisi = "invisible"
+            this.raceActive = "invisible2"
         },
         mediaOcult(){
-            this.mediaVisi = false
+            this.mediaVisi = "invisible"
         },
         communityVisible(){
-            this.gameVisi = false
-            this.releasesVisi = false
-            this.mediaVisi = false
-            this.communityVisi = true
-            this.servicesVisi = false
-            this.shopVisi = false
-            this.raceActive = false
+            this.gameVisi = "invisible"
+            this.releasesVisi = "invisible"
+            this.mediaVisi = "invisible"
+            this.communityVisi = "visible"
+            this.servicesVisi = "invisible"
+            this.shopVisi = "invisible"
+            this.raceActive = "invisible2"
         },
         communityOcult(){
-            this.communityVisi = false
+            this.communityVisi = "invisible"
         },
         servicesVisible(){
-            this.gameVisi = false
-            this.releasesVisi = false
-            this.mediaVisi = false
-            this.communityVisi = false
-            this.servicesVisi = true
-            this.shopVisi = false
-            this.raceActive = false
+            this.gameVisi = "invisible"
+            this.releasesVisi = "invisible"
+            this.mediaVisi = "invisible"
+            this.communityVisi = "invisible"
+            this.servicesVisi = "visible"
+            this.shopVisi = "invisible"
+            this.raceActive = "invisible2"
         },
         servicesOcult(){
-            this.servicesVisi = false
+            this.servicesVisi = "invisible"
         },
         shopVisible(){
-            this.gameVisi = false
-            this.releasesVisi = false
-            this.mediaVisi = false
-            this.communityVisi = false
-            this.servicesVisi = false
-            this.shopVisi = true
-            this.raceActive = false
+            this.gameVisi = "invisible"
+            this.releasesVisi = "invisible"
+            this.mediaVisi = "invisible"
+            this.communityVisi = "invisible"
+            this.servicesVisi = "invisible"
+            this.shopVisi = "visible"
+            this.raceActive = "invisible2"
         },
         shopOcult(){
-            this.shopVisi = false
+            this.shopVisi = "invisible"
         },
         racesVisible(){
-            this.raceActive = true
-            this.professionsActive = false
+            this.raceActive = "visible2"
+            this.professionsActive = "invisible2"
         },
         racesOcult(){
-            this.raceActive = false
+            this.raceActive = "invisible2"
         },
         professionVisible(){
-            this.raceActive = false
-            this.professionsActive = true
+            this.raceActive = "invisible2"
+            this.professionsActive = "visible2"
         },
         professionOcult(){
-            this.professionsActive = false
+            this.professionsActive = "invisible2"
         },
         endAction(){
-            this.gameVisi = false
-            this.raceActive = false
-            this.professionsActive = false
+            this.gameVisi = "invisible"
+            this.raceActive = "invisible2"
+            this.professionsActive = "invisible2"
         },
     },
    

@@ -18,6 +18,70 @@ a{
     font-family: Cronos;
     src:  local(Cronos), url(assets/fonts/cronos-pro-1.otf);
 }
+.visible{
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
+    animation: indown .3s;
+}
+.invisible{
+    visibility: hidden;
+    opacity: .2;
+    animation: inup .3s;
+}
+@keyframes indown{
+    0%
+    {
+      transform: translateY(-20px);
+    }
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+@keyframes inup{
+    0%
+    {
+      transform: translateY(0);
+    }
+    100%
+    {
+        transform: translateY(-20px);
+    }
+}
+.visible2{
+    z-index: 200;
+    visibility: visible;
+    opacity: 1;
+    animation: inright .3s;
+}
+.invisible2{
+    visibility: hidden;
+    opacity: .2;
+    animation: inleft .3s;
+}
+
+@keyframes inright{
+    0%
+    {
+      transform: translateX(-20px);
+    }
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes inleft{
+    0%
+    {
+      transform: translateX(0);
+    }
+    100%
+    {
+        transform: translateX(-10px);
+       
+    }
+}
 
 .top-menu{
     position: absolute;
@@ -205,8 +269,10 @@ a{
     position: absolute;
     right: 0;
     top: 0;
-    width: 50%;
+    width: 0%;
+    height: 10px;
     display: flex;
+  
 }
 .sub-menu ul{
     position: absolute;
@@ -215,6 +281,7 @@ a{
     padding: 0;
     width: 269px;
     height: 370px;
+    transition: all .1s;
 }
 
 .sub-lists1{
@@ -856,12 +923,12 @@ a{
     top: 90px;
     right: 390px;
     z-index: 500;
+    transition: all .1s;
 }
 .mini-sub-menu img{
     position: absolute;
     width: 230px;
     height: 200px;
-    right: 0;
     z-index: 100;
 }
 .mini-sub-menu ul{
@@ -974,29 +1041,36 @@ a{
     border: none;
     cursor: pointer;
 }
-
-.mini-menu2 img{
+.mini-sub-menu2{
+    position: absolute;
+    width: 100rem;
+    height: 300px;
+    right: 0;
+}
+#mini-menu2 img{
     position: absolute;
     width: 230px;
     height: 300px;
     right: 390px;
     top: 110px;
     z-index: 100;
+    transition: all .1s;
 }
-.mini-menu2 ul{
+#mini-menu2 ul{
     position: absolute;
-    left: 70px;
+    right: 335px;
     top: 135px;
     z-index: 101;
+    transition: all .1s;
 }
-.mini-menu2 ul li{
+#mini-menu2 ul li{
     color: #555;
     font-size: 17px;
     margin: 0px 0px 10px 0;
     font-family: Cronos;
     cursor: pointer;
 }
-.mini-menu2 ul .mini1-line2{
+#mini-menu2 ul .mini1-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1004,7 +1078,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini2-line2{
+#mini-menu2 ul .mini2-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1012,7 +1086,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini3-line2{
+#mini-menu2 ul .mini3-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1020,7 +1094,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini4-line2{
+#mini-menu2 ul .mini4-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1028,7 +1102,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini5-line2{
+#mini-menu2 ul .mini5-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1036,7 +1110,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini6-line2{
+#mini-menu2 ul .mini6-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;
@@ -1044,7 +1118,7 @@ a{
     font-size: 10px;
     cursor: default;
 }
-.mini-menu2 ul .mini7-line2{
+#mini-menu2 ul .mini7-line2{
     position: absolute;
     color: rgb(200, 200, 200);
     margin: 0;

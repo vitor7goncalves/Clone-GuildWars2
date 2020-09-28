@@ -89,7 +89,7 @@
         </div>
       </header>
       <div class="sub-menu">
-        <div v-show="gameVisi">
+        <div v-bind:class="gameVisi">
              <ul class="sub-lists1">
                <img class="img-1" src="assets/img/nav-sub-aba.png" alt="">
                <li class="sub-list1">The Races of Tyria</li><img class="seta-sub1" src="assets/img/menu-arrow.png" alt=""><button @mouseover="racesVisible()" class="button-sub1"></button>
@@ -108,7 +108,7 @@
              </ul>
             </div>
             <div class="mini-sub-menu">
-              <div v-show="raceActive" class="mini-menu" @mouseleave="racesOcult()">
+              <div v-bind:class="raceActive" class="mini-menu" @mouseleave="racesOcult()">
               <img class="background-races" src="assets/img/nav-subSubNav.ac62b1e.png" alt="">
                   <ul class="races">
                     <li class="asura">Asura</li><button class="as"></button>
@@ -123,7 +123,8 @@
                   </ul>
                 </div>
             </div>
-            <div v-show="professionsActive" class="mini-menu2" @mouseleave="professionOcult()">
+            <div class="mini-sub-menu2">
+            <div v-bind:class="professionsActive" id="mini-menu2" @mouseleave="professionOcult()">
               <img class="background-professions" src="assets/img/nav-subSubNav.ac62b1e.png" alt="">
                   <ul class="professions">
                     <li class="engineer">Engineer</li><button class="eng"></button>
@@ -143,7 +144,8 @@
                     <li class="guardian">Guardian</li><button class="gua"></button>
                   </ul>
             </div>
-            <div v-show="releasesVisi">
+          </div>
+            <div v-bind:class="releasesVisi">
              <ul class="sub-lists2" @mouseleave="releasesOcult()">
               <img class="img-2" src="assets/img/nav-sub-aba.png" alt="">
                <li class="sub-list2" id="l2-1">Living World</li><button class="button-sub8"></button>
@@ -156,7 +158,7 @@
                <a href="" class="a-3">Path of Fire</a><li class="sub-list-back2">Expansion</li><button class="button-sub10"></button>
              </ul>
             </div>
-            <div v-show="mediaVisi">
+            <div v-bind:class="mediaVisi">
              <ul class="sub-lists3" @mouseleave="mediaOcult()">
               <img class="img-3" src="assets/img/nav-sub-aba.png" alt="">             
                <li class="sub-list3">Concept Art</li><button class="button-sub11"></button>
@@ -172,7 +174,7 @@
                <a href="" class="a-4">Guild Wars 2</a><li class="sub-list-back3" id="l3-6">Asset Kit</li><button class="button-sub15"></button>
              </ul>
             </div>
-             <div v-show="communityVisi">
+             <div v-bind:class="communityVisi">
              <ul class="sub-lists4" @mouseleave="communityOcult()">
               <img class="img-4" src="assets/img/nav-sub-aba.png" alt="">              
                <li class="sub-list4">News</li><button class="button-sub16"></button>
@@ -184,7 +186,7 @@
                <li class="sub-list4">Affiliate Program</li><button class="button-sub18"></button>
              </ul>
             </div>
-             <div v-show="servicesVisi">
+             <div v-bind:class="servicesVisi">
              <ul class="sub-lists5" @mouseleave="servicesOcult()">
               <img class="img-5" src="assets/img/nav-sub-aba.png" alt="">           
                <li class="sub-list5">Download Game</li><button class="button-sub19"></button>
@@ -198,7 +200,7 @@
                <li class="sub-list5">Support</li><button class="button-sub23"></button>
              </ul>
             </div>
-             <div v-show="shopVisi">
+             <div v-bind:class="shopVisi">
              <ul class="sub-lists6" @mouseleave="shopOcult()">
               <img class="img-6" src="assets/img/nav-sub-aba.png" alt="">          
                <li class="sub-list6">Buy</li><a class="a-5" href="">Guild Wars 2</a><button class="button-sub24"></button>
@@ -211,7 +213,9 @@
              </ul>
             </div>
       </div>
+
       <div class="end-action" @mouseover="endAction()"></div>
+
        <header class="showcase">
            <h2>Sunqua Peak</h2>
            <p class="p1">An all-new fractal and challenge mode</p>
@@ -433,6 +437,7 @@
                 </div>
             </div>
         </section>
+        
       </div>
         <!--Link para as icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
